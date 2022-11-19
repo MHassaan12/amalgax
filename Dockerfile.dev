@@ -1,0 +1,6 @@
+FROM node:16
+WORKDIR /frontend
+COPY ./frontend/package*.json ./
+RUN yarn install
+COPY ./frontend/ ./
+CMD ["yarn", "start"]

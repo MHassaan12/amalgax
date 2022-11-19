@@ -4,3 +4,5 @@ COPY ./frontend/package*.json ./
 RUN yarn install
 COPY ./frontend/ ./
 CMD ["yarn", "start"]
+
+
